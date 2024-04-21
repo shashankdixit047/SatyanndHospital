@@ -1142,3 +1142,22 @@ All JavaScript fuctions Start
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      const phoneNumberInput = document.querySelector("input[type='number']");
+      const phoneNumber = phoneNumberInput.value.trim();
+      
+      if (phoneNumber.length !== 10) {
+        alert("Input number is invalid. Please enter a 10-digit number.");
+        return;
+      }
+      
+      // If the input number is valid, you can submit the form here
+      // For demonstration purpose, I'm just logging the phone number
+      console.log("Phone Number:", phoneNumber);
+    });
+  });
