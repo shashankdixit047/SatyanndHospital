@@ -19863,3 +19863,32 @@ div.dataTables_wrapper div.dataTables_filter input {
   margin: 0px auto 20px;
 }
 /* Gallery CSS */
+
+
+#slider{
+  margin:0 auto;
+  width:80%;
+  overflow:hidden;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+@keyframes fade{
+  from{
+    opacity:0.4;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@media (max-width:567px){
+  #slider{
+    width:100%;
+
+  }
+}
