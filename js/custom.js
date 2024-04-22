@@ -1161,3 +1161,5 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log("Phone Number:", phoneNumber);
     });
   });
+
+//   Gallery JAVAscript

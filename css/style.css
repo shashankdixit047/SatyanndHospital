@@ -2815,8 +2815,8 @@ THEMEFOREST REQUIRED CLASSES
 }
 
 .logo-header .logo-header-inner img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .site-header ul,
@@ -19862,3 +19862,4 @@ div.dataTables_wrapper div.dataTables_filter input {
   display: table;
   margin: 0px auto 20px;
 }
+/* Gallery CSS */
