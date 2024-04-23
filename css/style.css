@@ -2815,8 +2815,8 @@ THEMEFOREST REQUIRED CLASSES
 }
 
 .logo-header .logo-header-inner img {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .site-header ul,
@@ -2828,10 +2828,9 @@ THEMEFOREST REQUIRED CLASSES
   /*--main-bar--*/
   position: relative;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 30px 10px 30px;
   transition: all 0.5s ease;
-  background: none;
+  background: white;
 }
 
 .main-bar .container,
@@ -2967,6 +2966,7 @@ THEMEFOREST REQUIRED CLASSES
 .header-nav .nav li i {
   font-size: 9px;
   margin-left: 3px;
+  color: #000;
   margin-top: -3px;
   vertical-align: middle;
   opacity: 0.7;
@@ -3396,11 +3396,11 @@ THEMEFOREST REQUIRED CLASSES
 }
 
 .header-style-1 .header-nav .nav>li>a {
-  color: #fff;
+  color: black;
 }
 
 .header-style-1 .header-nav .nav>li:hover>a {
-  color: #8BEB1C;
+  color: #8BEB1C; 
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
@@ -19906,6 +19906,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 .video-container {
   position: relative;
   display: inline-block;
+  margin: 10px;
 }
 
 .play-button {
@@ -19913,13 +19914,15 @@ div.dataTables_wrapper div.dataTables_filter input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
   border: none;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
+}
+.button {
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: rgba(193, 244, 246, 0.698) 0px 0px 0px 0px;
+  align-items: center;
+  border: 0;
 }
 
 /* Hide the default video controls */
