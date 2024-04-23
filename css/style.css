@@ -12411,6 +12411,7 @@ body[class*="active-"] .cs-message-panel {
 }
 
 .aon-med-appoint-area2 .media img {
+  
   width: auto;
 }
 
@@ -19870,29 +19871,58 @@ div.dataTables_wrapper div.dataTables_filter input {
   width:80%;
   overflow:hidden;
 }
+.slides {
+  display: none;
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
 
-.slides{
-  overflow:hidden;
-  animation-name:fade;
-  animation-duration:2s;
-  display:none;
+  animation: fade 4s ease-in-out infinite;
 }
-@keyframes fade{
-  0%{
-    opacity:0;
-  }
 
-  50%{
+.slides.show {
+  display: block;
+  opacity: 1;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 1;
+  }
+  70%{
     opacity: 1;
   }
   100%{
     opacity: 0;
   }
 }
-
 @media (max-width:567px){
   #slider{
     width:100%;
 
   }
+}
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Hide the default video controls */
+#videoPlayer::-webkit-media-controls {
+  display: none !important;
 }

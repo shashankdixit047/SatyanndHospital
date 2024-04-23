@@ -1162,33 +1162,43 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-//   Gallery JAVAscript
-var index = 0;
-var slides = document.querySelectorAll(".slides");
-var dot = document.querySelectorAll(".dot");
-
-function changeSlide(){
-
-  if(index<0){
-    index = slides.length-1;
+  var index = 0;
+  var slides = document.querySelectorAll(".slides");
+  var dot = document.querySelectorAll(".dot");
+  
+  function changeSlide() {
+	for (let i = 0; i < slides.length; i++) {
+	  slides[i].classList.remove("show");
+	  dot[i].classList.remove("active");
+	}
+  
+	slides[index].classList.add("show");
+	dot[index].classList.add("active");
+  
+	index = (index + 1) % slides.length; // Loop back to the first slide after the last one
+  
+	setTimeout(changeSlide, 4000); // Change slide every 2 seconds
   }
   
-  if(index>slides.length-1){
-    index = 0;
-  }
-  
-  for(let i=0;i<slides.length;i++){
-    slides[i].style.display = "none";
-    dot[i].classList.remove("active");
-  }
-  
-  slides[index].style.display= "block";
-  dot[index].classList.add("active");
-  
-  index++;
-  
-  setTimeout(changeSlide,2000);
-  
-}
+  // Initial call to start the slideshow
+  changeSlide();
 
-changeSlide();
+
+  document.getElementById('playButton').addEventListener('click', function() {
+	var video = document.getElementById('videoPlayer');
+	video.play();
+	this.style.display = 'none';
+  });
+  
+  // Optional: Hide play button when video plays, show when paused/stopped
+  document.getElementById('videoPlayer').addEventListener('play', function() {
+	document.getElementById('playButton').style.display = 'none';
+  });
+  
+  document.getElementById('videoPlayer').addEventListener('pause', function() {
+	document.getElementById('playButton').style.display = 'block';
+  });
+  
+  document.getElementById('videoPlayer').addEventListener('ended', function() {
+	document.getElementById('playButton').style.display = 'block';
+  });
