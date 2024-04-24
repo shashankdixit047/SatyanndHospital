@@ -1190,48 +1190,4 @@ document.addEventListener("DOMContentLoaded", function() {
 //  Home page hero section End
 
 // Gallety Page Start start
-(function() {
-	var gallery = document.querySelector("#gallery");
-	if (!gallery) return; // Exit if gallery is not found
-  
-	function getVal(elem, style) {
-	  return parseInt(window.getComputedStyle(elem).getPropertyValue(style), 10);
-	}
-  
-	function getHeight(item) {
-	  return item.querySelector(".content").getBoundingClientRect().height;
-	}
-  
-	function setGridRowEnd(item) {
-	  var altura = getVal(gallery, "grid-auto-rows");
-	  var gap = getVal(gallery, "grid-row-gap");
-	  item.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-	}
-  
-	function resizeAll() {
-	  gallery.querySelectorAll(".gallery-item").forEach(setGridRowEnd);
-	}
-  
-	gallery.querySelectorAll("img").forEach(function(item) {
-	  item.classList.add("byebye");
-	  function onLoad() {
-		setGridRowEnd(item.parentElement.parentElement);
-		item.classList.remove("byebye");
-	  }
-	  if (item.complete) {
-		onLoad();
-	  } else {
-		item.addEventListener("load", onLoad);
-	  }
-	});
-  
-	window.addEventListener("resize", resizeAll);
-	resizeAll(); // Ensure correct layout on initial load
-  
-	gallery.querySelectorAll(".gallery-item").forEach(function(item) {
-	  item.addEventListener("click", function() {
-		item.classList.toggle("full");
-	  });
-	});
-  })();
 // Gallety Page Start end
