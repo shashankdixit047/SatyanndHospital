@@ -1140,7 +1140,7 @@ All JavaScript fuctions Start
 })(window.jQuery);
 
 
-
+// Call for Request Start
 
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
@@ -1162,6 +1162,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  // Call for Request End
+
+
+//  Home page hero section start
+
   var index = 0;
   var slides = document.querySelectorAll(".slides");
   var dot = document.querySelectorAll(".dot");
@@ -1182,8 +1187,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
   changeSlide();
 
+//  Home page hero section End
 
-// Gallery Script
+// Gallety Page Start start
 (function() {
 	var gallery = document.querySelector("#gallery");
 	if (!gallery) return; // Exit if gallery is not found
@@ -1228,3 +1234,4 @@ document.addEventListener("DOMContentLoaded", function() {
 	  });
 	});
   })();
+// Gallety Page Start end
