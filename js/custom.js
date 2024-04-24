@@ -1190,4 +1190,6 @@ document.addEventListener("DOMContentLoaded", function() {
 //  Home page hero section End
 
 // Gallety Page Start start
+
+
 // Gallety Page Start end
