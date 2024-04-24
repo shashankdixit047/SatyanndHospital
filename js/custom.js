@@ -1180,25 +1180,51 @@ document.addEventListener("DOMContentLoaded", function() {
 	setTimeout(changeSlide, 4000); // Change slide every 2 seconds
   }
   
-  // Initial call to start the slideshow
   changeSlide();
 
 
-  document.getElementById('playButton').addEventListener('click', function() {
-	var video = document.getElementById('videoPlayer');
-	video.play();
-	this.style.display = 'none';
-  });
+// Gallery Script
+(function() {
+	var gallery = document.querySelector("#gallery");
+	if (!gallery) return; // Exit if gallery is not found
   
-  // Optional: Hide play button when video plays, show when paused/stopped
-  document.getElementById('videoPlayer').addEventListener('play', function() {
-	document.getElementById('playButton').style.display = 'none';
-  });
+	function getVal(elem, style) {
+	  return parseInt(window.getComputedStyle(elem).getPropertyValue(style), 10);
+	}
   
-  document.getElementById('videoPlayer').addEventListener('pause', function() {
-	document.getElementById('playButton').style.display = 'block';
-  });
+	function getHeight(item) {
+	  return item.querySelector(".content").getBoundingClientRect().height;
+	}
   
-  document.getElementById('videoPlayer').addEventListener('ended', function() {
-	document.getElementById('playButton').style.display = 'block';
-  });
+	function setGridRowEnd(item) {
+	  var altura = getVal(gallery, "grid-auto-rows");
+	  var gap = getVal(gallery, "grid-row-gap");
+	  item.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+	}
+  
+	function resizeAll() {
+	  gallery.querySelectorAll(".gallery-item").forEach(setGridRowEnd);
+	}
+  
+	gallery.querySelectorAll("img").forEach(function(item) {
+	  item.classList.add("byebye");
+	  function onLoad() {
+		setGridRowEnd(item.parentElement.parentElement);
+		item.classList.remove("byebye");
+	  }
+	  if (item.complete) {
+		onLoad();
+	  } else {
+		item.addEventListener("load", onLoad);
+	  }
+	});
+  
+	window.addEventListener("resize", resizeAll);
+	resizeAll(); // Ensure correct layout on initial load
+  
+	gallery.querySelectorAll(".gallery-item").forEach(function(item) {
+	  item.addEventListener("click", function() {
+		item.classList.toggle("full");
+	  });
+	});
+  })();

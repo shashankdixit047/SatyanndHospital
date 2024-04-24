@@ -91,6 +91,24 @@ GENERAL
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swap");
 
 /*===GENERAL===*/
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgb(22,32,88);
+background: linear-gradient(90deg, rgba(22,32,88,1) 0%, rgba(34,211,159,0.7875525210084033) 100%);
+}
 .site-text-primary {
   color: #022279;
 }
@@ -19912,9 +19930,14 @@ div.dataTables_wrapper div.dataTables_filter input {
 }
 
 .row iframe {
-  padding: 20px;
   width: 100%;
   height: auto;
   aspect-ratio: 5/3;
   border-radius: 40px;
+  padding: 20px;
+ 
+}
+
+.about-s1-img{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
