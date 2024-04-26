@@ -79,3 +79,11 @@
     }
     
   }
+.button-section{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin: 50px 0px 50px 0px;
+}
