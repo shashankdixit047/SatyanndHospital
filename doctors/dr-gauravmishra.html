@@ -1157,11 +1157,12 @@
         <!-- FOOTER COPYRIGHT -->
         <div class="footer-bottom">
           <div class="container">
-            <div class="aon-footer-bottom-area">
-              <div class="aon-foo-copyright">
-                <span>Copyright @ 2024 <span style="color: #22D39F;">Satyanand</span> Hospital</span>
-              </div>
+            <div class="aon-foo-copyright" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px;">
+                <div id="google_translate_element"></div>
+              <span>Copyright @ 2024 <span style="color: #22D39F;">Satyanand</span> Hospital</span>
             </div>
+          
+          </div>
           </div>
         </div>
       </footer>
@@ -1224,6 +1225,14 @@
 
 
 <!-- JAVASCRIPT  FILES ========================================= --> 
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<!-- Call back function 2 -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
 <script  src="../js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
 <script  src="../js/popper.min.js"></script><!-- POPPER.MIN JS -->
 <script  src="../js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
