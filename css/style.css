@@ -13470,6 +13470,10 @@ body[class*="active-"] .cs-message-panel {
 }
 
 @media only screen and (max-width:767px) {
+  .sf-banner-heading-area {
+    padding: 80px 15px;
+  }
+  
   .sf-banner-heading-large {
     font-size: 36px;
   }
