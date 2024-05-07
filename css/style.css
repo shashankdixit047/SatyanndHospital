@@ -7203,6 +7203,25 @@ body[class*="active-"] .cs-message-panel {
   .aon-custom-nav>.nav-item>.nav-link>h3 {
     font-size: 20px;
   }
+  .aon-custom-nav>.nav-item>.nav-link>h3{
+    padding: 0px 20px;
+  }
+  .aon-custom-nav>.nav-item>.nav-link.active {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+  }
+  .aon-custom-nav>.nav-item>.nav-link.active:after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: none;
+    opacity: 1;
+    position: absolute;
+    content: '';
+    z-index: 1;
+  }
+  
 }
 
 @media only screen and (max-width:640px) {
@@ -19724,4 +19743,18 @@ div.dataTables_wrapper div.dataTables_filter input {
 
 .about-s1-img{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.available-list{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.available-list div{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.aon-consultancy-free{
+  margin-bottom: 30px;
 }
