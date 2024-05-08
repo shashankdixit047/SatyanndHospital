@@ -19750,11 +19750,63 @@ div.dataTables_wrapper div.dataTables_filter input {
   justify-content: space-between;
   flex-direction: column;
 }
-.available-list div{
+.available-list>div div{
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  
 }
 .aon-consultancy-free{
   margin-bottom: 30px;
+}
+
+/* Upskill Courses Section */
+.sf-upskill-courses {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sf-upskill-courses h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.sf-upskill-courses ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sf-upskill-courses ul li {
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.sf-upskill-courses ul li:last-child {
+  margin-bottom: 0;
+}
+
+.sf-upskill-courses ul li p {
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sf-upskill-courses {
+      padding: 10px;
+  }
+
+  .sf-upskill-courses h3 {
+      font-size: 20px;
+  }
+
+  .sf-upskill-courses ul li p {
+      font-size: 14px;
+  }
 }
