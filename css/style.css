@@ -19810,3 +19810,25 @@ div.dataTables_wrapper div.dataTables_filter input {
       font-size: 14px;
   }
 }
+
+.right-arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.arrow-icon {
+  border-radius: 60%;
+  height: 2.8125rem;  /* 45px assuming the root font-size is 16px */
+  width: 2.8125rem;   /* 45px assuming the root font-size is 16px */
+  animation: breathe 2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

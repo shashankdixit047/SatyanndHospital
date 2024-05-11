@@ -1,1064 +1,915 @@
 <!DOCTYPE html>
 <html lang="EN-IN">
-  <head>
-    <!-- META -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-    <meta name="description" content="" />
 
-    <!-- FAVICONS ICON -->
-    <link rel="icon" href="./img/logos/logo.jpg" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="./img/logos/logo.jpg" />
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="robots" content="" />
+  <meta name="description" content="" />
 
-    <!-- PAGE TITLE HERE -->
-    <title>Doctors - Satyanand Hospital</title>
+  <!-- FAVICONS ICON -->
+  <link rel="icon" href="./img/logos/logo.jpg" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="./img/logos/logo.jpg" />
 
-    <!-- MOBILE SPECIFIC -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+  <!-- PAGE TITLE HERE -->
+  <title>Doctors - Satyanand Hospital</title>
 
-    <!-- BOOTSTRAP STYLE SHEET -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <!-- FONTAWESOME STYLE SHEET -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Feather STYLE SHEET -->
-    <link href="css/feather.css" rel="stylesheet" />
+  <!-- MOBILE SPECIFIC -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!-- Font STYLE SHEET -->
-    <link href="css/font.css" rel="stylesheet" />
-    <!-- OWL CAROUSEL STYLE SHEET -->
-    <link href="css/owl.carousel.min.css" rel="stylesheet" />
-    <!-- SLICK CAROUSEL STYLE SHEET -->
-    <link href="css/slick.min.css" rel="stylesheet" />
-    <!-- SLICK STYLE SHEET -->
-    <link href="css/slick-theme.css" rel="stylesheet" />
-    <!-- Custome scrollbar STYLE SHEET  -->
-    <link href="css/jquery.scrollbar.css" rel="stylesheet" />
-    <!-- DropZone STYLE SHEET  -->
-    <link href="css/dropzone.css" rel="stylesheet" />
-    <!-- MAGNIFIC POPUP STYLE SHEET -->
-    <link href="css/magnific-popup.min.css" rel="stylesheet" />
-    <!-- FLATICON STYLE SHEET -->
-    <link href="css/flaticon.min.css" rel="stylesheet" />
-    <!-- Lc light box popup -->
-    <link href="css/lc_lightbox.css" rel="stylesheet" />
-    <!-- Price Range Slider -->
-    <link href="css/bootstrap-slider.min.css" rel="stylesheet" />
-    <!-- Bootstrap-toggle -->
-    <link href="css/bootstrap4-toggle.min.css" rel="stylesheet" />
-    <!-- Bootstrap-datatables -->
-    <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet" />
-    <!-- Date-picker -->
-    <link href="css/date-picker.css" rel="stylesheet" />
-    <!-- Full calendar -->
-    <link href="css/fullcalendar.min.css" rel="stylesheet" />
-    <!-- MAIN STYLE SHEET -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- BOOTSTRAP STYLE SHEET -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FONTAWESOME STYLE SHEET -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Feather STYLE SHEET -->
+  <link href="css/feather.css" rel="stylesheet" />
 
-  <body>
-    <!-- LOADING AREA START ===== -->
-    <div class="loading-area">
-      <div class="loading-box"></div>
-      <div class="loading-pic">
-        <div class="cssload-wrap">
-          <div class="cssload-container">
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-            <span class="cssload-dots"></span>
-          </div>
+  <!-- Font STYLE SHEET -->
+  <link href="css/font.css" rel="stylesheet" />
+  <!-- OWL CAROUSEL STYLE SHEET -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet" />
+  <!-- SLICK CAROUSEL STYLE SHEET -->
+  <link href="css/slick.min.css" rel="stylesheet" />
+  <!-- SLICK STYLE SHEET -->
+  <link href="css/slick-theme.css" rel="stylesheet" />
+  <!-- Custome scrollbar STYLE SHEET  -->
+  <link href="css/jquery.scrollbar.css" rel="stylesheet" />
+  <!-- DropZone STYLE SHEET  -->
+  <link href="css/dropzone.css" rel="stylesheet" />
+  <!-- MAGNIFIC POPUP STYLE SHEET -->
+  <link href="css/magnific-popup.min.css" rel="stylesheet" />
+  <!-- FLATICON STYLE SHEET -->
+  <link href="css/flaticon.min.css" rel="stylesheet" />
+  <!-- Lc light box popup -->
+  <link href="css/lc_lightbox.css" rel="stylesheet" />
+  <!-- Price Range Slider -->
+  <link href="css/bootstrap-slider.min.css" rel="stylesheet" />
+  <!-- Bootstrap-toggle -->
+  <link href="css/bootstrap4-toggle.min.css" rel="stylesheet" />
+  <!-- Bootstrap-datatables -->
+  <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+  <!-- Date-picker -->
+  <link href="css/date-picker.css" rel="stylesheet" />
+  <!-- Full calendar -->
+  <link href="css/fullcalendar.min.css" rel="stylesheet" />
+  <!-- MAIN STYLE SHEET -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- LOADING AREA START ===== -->
+  <div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+      <div class="cssload-wrap">
+        <div class="cssload-container">
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
+          <span class="cssload-dots"></span>
         </div>
       </div>
     </div>
-    <!-- LOADING AREA  END ====== -->
+  </div>
+  <!-- LOADING AREA  END ====== -->
 
-    <div class="page-wraper">
-      <!-- HEADER START -->
-      <header
-        class="site-header header-style-1 mobile-sider-drawer-menu header-full-width"
-      >
-        <div class="sticky-header main-bar-wraper navbar-expand-lg">
-          <div class="main-bar">
-            <div class="container clearfix">
-              <!--Logo section start-->
-              <div class="logo-header">
-                <div class="logo-header-inner logo-header-one">
-                  <a href="index.html">
-                    <img
-                      class="logo-pic-one"
-                      src="./img/logos/logo.png"
-                      alt=""
-                    />
-                    <img
-                      class="logo-pic-two"
-                      src="./img/logos/logo.png"
-                      alt=""
-                    />
-                  </a>
-                </div>
+  <div class="page-wraper">
+    <!-- HEADER START -->
+    <header class="site-header header-style-1 mobile-sider-drawer-menu header-full-width">
+      <div class="sticky-header main-bar-wraper navbar-expand-lg">
+        <div class="main-bar">
+          <div class="container clearfix">
+            <!--Logo section start-->
+            <div class="logo-header">
+              <div class="logo-header-inner logo-header-one">
+                <a href="index.html">
+                  <img class="logo-pic-one" src="./img/logos/logo.png" alt="" />
+                  <img class="logo-pic-two" src="./img/logos/logo.png" alt="" />
+                </a>
               </div>
-              <!--Logo section End-->
+            </div>
+            <!--Logo section End-->
 
-              <!-- NAV Toggle Button -->
-              <button
-                id="mobile-side-drawer"
-                data-target=".header-nav"
-                data-toggle="collapse"
-                type="button"
-                class="navbar-toggler collapsed"
-              >
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar icon-bar-first"></span>
-                <span class="icon-bar icon-bar-two"></span>
-                <span class="icon-bar icon-bar-three"></span>
-              </button>
+            <!-- NAV Toggle Button -->
+            <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button"
+              class="navbar-toggler collapsed">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar icon-bar-first"></span>
+              <span class="icon-bar icon-bar-two"></span>
+              <span class="icon-bar icon-bar-three"></span>
+            </button>
 
-              <!-- MAIN Vav -->
-              <div
-                class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center"
-              >
-                <ul class="nav navbar-nav">
-                  <li class="has-child">
-                    <a href="index.html">Home</a>
-                  </li>
+            <!-- MAIN Vav -->
+            <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
+              <ul class="nav navbar-nav">
+                <li class="has-child">
+                  <a href="index.html">Home</a>
+                </li>
 
-                  <li class="has-child">
-                    <a href="about-us-2.html">About us</a>
-                  </li>
+                <li class="has-child">
+                  <a href="about-us-2.html">About us</a>
+                </li>
 
-                  <li class="has-child current-menu-item">
-                    <a href="team-member.html">Doctor</a>
-                  </li>
+                <li class="has-child current-menu-item">
+                  <a href="team-member.html">Doctor</a>
+                </li>
 
-                  <li class="has-child">
-                    <a href="contact-us.html">Contact</a>
-                  </li>
+                <li class="has-child">
+                  <a href="contact-us.html">Contact</a>
+                </li>
 
-                  <li class="has-child">
-                    <a href="gallery.html">Gallery</a>
+                <li class="has-child">
+                  <a href="gallery.html">Gallery</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Header Right Section-->
+            <div class="extra-nav header-2-nav">
+              <div class="extra-cell">
+                <a href="contact-us.html" class="site-button aon-add-listing m-l20">
+                  <i class="feather-book"></i>Book Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- Content -->
+    <div class="page-content">
+      <!--Banner-->
+      <div class="aon-page-benner-area">
+        <div class="aon-page-banner-row">
+          <div class="aon-page-benner-overlay"></div>
+          <div class="sf-banner-heading-wrap">
+            <div class="sf-banner-heading-area">
+              <div class="sf-banner-heading-large">
+                Meet Our Expert Doctors
+              </div>
+              <div class="sf-banner-breadcrumbs-nav">
+                <ul class="list-inline">
+                  <li>
+                    Explore our team of highly skilled and experienced doctors
+                    dedicated to providing exceptional healthcare. From
+                    general medicine to specialized surgeries, our doctors are
+                    committed to your well-being.
                   </li>
                 </ul>
               </div>
-
-              <!-- Header Right Section-->
-              <div class="extra-nav header-2-nav">
-                <div class="extra-cell">
-                  <a
-                    href="contact-us.html"
-                    class="site-button aon-add-listing m-l20"
-                  >
-                    <i class="feather-book"></i>Book Appointment
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </header>
-      <!-- HEADER END -->
+      </div>
+      <!--Banner-->
 
-      <!-- Content -->
-      <div class="page-content">
-        <!--Banner-->
-        <div class="aon-page-benner-area">
-          <div class="aon-page-banner-row">
-            <div class="aon-page-benner-overlay"></div>
-            <div class="sf-banner-heading-wrap">
-              <div class="sf-banner-heading-area">
-                <div class="sf-banner-heading-large">
-                  Meet Our Expert Doctors
-                </div>
-                <div class="sf-banner-breadcrumbs-nav">
-                  <ul class="list-inline">
-                    <li>
-                      Explore our team of highly skilled and experienced doctors
-                      dedicated to providing exceptional healthcare. From
-                      general medicine to specialized surgeries, our doctors are
-                      committed to your well-being.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Banner-->
+      <!-- Team Section -->
 
+      <div class="container">
         <!-- Team Section -->
-
-        <div class="container">
-          <!-- Team Section -->
-          <section class="aon-med-team2-area">
-            <div class="container">
-              <!--Title Section Start-->
-              <div class="section-head center">
-                <span class="aon-sub-title">Team</span>
-                <h2 class="aon-title">Meet Our Super Specialists</h2>
-                <p>
-                  With years of experience and advanced training, our doctors
-                  are dedicated to providing the highest level of care to our
-                  patients.
-                </p>
-              </div>
-              <!--Title Section End-->
-
-              <div class="section-content">
-                <div class="aon-med-team2-section">
-                  <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                      <a href="./doctors/dr-suneelkanoujiya.html">
-                        <div class="aon-med-team2 bg-light-gray">
-                          <div class="aon-med-team2-pic">
-                            <img src="images/doctors/suneel.jpg" alt="#" />
-                          </div>
-                          <div class="aon-med-team2-info">
-                            <div class="aon-df-rating">
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="aon-df-lable">(124)</span>
-                            </div>
-                            <h4 class="aon-title">Dr.Suneel Kanoujiya</h4>
-                            <p class="aon-med-team2-discription">
-                              M.B.B.S; M.S; M.Ch.
-                            </p>
-                            <span class="aon-med-team2-position"
-                              >Paediatric Surgery</span
-                            >
-                            <span class="aon-med-team2-location"
-                              ><i class="feather-map-pin"></i>College Name or
-                              Experience</span
-                            >
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="./doctors/dr-sudeepgarg.html">
-                        <div class="aon-med-team2 bg-light-gray">
-                          <div class="aon-med-team2-pic">
-                            <img src="images/doctors/sudeep.jpg" alt="#" />
-                          </div>
-                          <div class="aon-med-team2-info">
-                            <div class="aon-df-rating">
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="aon-df-lable">(124)</span>
-                            </div>
-                            <h4 class="aon-title">Dr. Sudeep Garg</h4>
-                            <p class="aon-med-team2-discription">
-                              M.B.B.S, M.S, M.Ch
-                            </p>
-                            <span class="aon-med-team2-position"
-                              >Oncosurgery</span
-                            >
-                            <span class="aon-med-team2-location"
-                              ><i class="feather-map-pin"></i>College Name or
-                              Experience</span
-                            >
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                      <a href="./doctors/dr-pushpendrakannauji.html">
-                        <div class="aon-med-team2 bg-light-gray">
-                          <div class="aon-med-team2-pic">
-                            <img src="images/doctors/pushpendra.jpg" alt="#" />
-                          </div>
-                          <div class="aon-med-team2-info">
-                            <div class="aon-df-rating">
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="fa fa-star"></span>
-                              <span class="aon-df-lable">(124)</span>
-                            </div>
-                            <h4 class="aon-title">Dr. Pushpendra Kannaujia</h4>
-                            <p class="aon-med-team2-discription">
-                              M.B.B.S, M.S, M.Ch
-                            </p>
-                            <span class="aon-med-team2-position"
-                              >Plastic Surgery</span
-                            >
-                            <span class="aon-med-team2-location"
-                              ><i class="feather-map-pin"></i>College Name or
-                              Experience</span
-                            >
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- Team Section END -->
-
-          <!--Title Section Start-->
-          
+        <section class="aon-med-team2-area">
+          <div class="container">
+            <!--Title Section Start-->
             <div class="section-head center">
               <span class="aon-sub-title">Team</span>
-              <h2 class="aon-title">Meet Our Specialists</h2>
+              <h2 class="aon-title">Meet Our Super Specialists</h2>
               <p>
-                They are committed to delivering personalized care and ensuring
-                the best possible outcomes for our patients.
+                With years of experience and advanced training, our doctors
+                are dedicated to providing the highest level of care to our
+                patients.
               </p>
             </div>
             <!--Title Section End-->
 
             <div class="section-content">
-              <div class="aon-med-team-section">
-                <!-- 4 card / row 1 -->
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="./doctors/dr-saurabhmishra.html"
-                          ><img src="images/doctors/saurabh.jpg" alt="#"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-saurabhmishra.html"
-                            >DR SAURABH MISHRA</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
-                        <span class="aon-med-team-position"
-                          >Consultant Anaesthesiology and Intensive care</span
-                        >
-                        <!-- Collge or Location -->
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>Formerly G.S.M.V.
-                          Medical College, Kanpur</span
-                        >
-                        <div class="aon-df-rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="aon-df-lable">(124)</span>
+              <div class="aon-med-team2-section">
+                <div class="row justify-content-center">
+                  <div class="col-lg-4 col-md-6">
+                    <a href="./doctors/dr-suneelkanoujiya.html">
+                      <div class="aon-med-team2 bg-light-gray">
+                        <div class="aon-med-team2-pic">
+                          <img src="images/doctors/suneel.jpg" alt="#" />
+                        </div>
+                        <div class="aon-med-team2-info">
+                          <div class="aon-df-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="aon-df-lable">(124)</span>
+                          </div>
+                          <h4 class="aon-title">Dr.Suneel Kanoujiya</h4>
+                          <p class="aon-med-team2-discription">
+                            M.B.B.S; M.S; M.Ch.
+                          </p>
+                          <span class="aon-med-team2-position">Paediatric Surgery</span>
+                          <span class="aon-med-team2-location"><i class="feather-map-pin"></i>College Name or
+                            Experience</span>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="./doctors/dr-gauravmishra.html"
-                          ><img src="images/doctors/gaurav.jpg" alt="#"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-gauravmishra.html"
-                            >DR GAURAV MISHRA</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
-                        <span class="aon-med-team-position"
-                          >Consultant Pediatrician and Neonatologist</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>Formerly K.G.M.U.,
-                          Lucknow</span
-                        >
-                        <div class="aon-df-rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="aon-df-lable">(124)</span>
+                  <div class="col-lg-4 col-md-6">
+                    <a href="./doctors/dr-sudeepgarg.html">
+                      <div class="aon-med-team2 bg-light-gray">
+                        <div class="aon-med-team2-pic">
+                          <img src="images/doctors/sudeep.jpg" alt="#" />
+                        </div>
+                        <div class="aon-med-team2-info">
+                          <div class="aon-df-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="aon-df-lable">(124)</span>
+                          </div>
+                          <h4 class="aon-title">Dr. Sudeep Garg</h4>
+                          <p class="aon-med-team2-discription">
+                            M.B.B.S, M.S, M.Ch
+                          </p>
+                          <span class="aon-med-team2-position">Oncosurgery</span>
+                          <span class="aon-med-team2-location"><i class="feather-map-pin"></i>College Name or
+                            Experience</span>
                         </div>
                       </div>
-                    </div>
+                    </a>
                   </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="doctors/dr-shwetamishra.html"
-                          ><img src="images/doctors/shweta.jpg" alt="#"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="doctors/dr-shwetamishra.html">DR SHWETA MISHRA</a>
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S, M.D</p>
-                        <span class="aon-med-team-position"
-                          >Biochemistry</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>Formerly G.M.C,
-                          Patiala</span
-                        >
-                        <div class="aon-df-rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="aon-df-lable">(124)</span>
+                  <div class="col-lg-4 col-md-6">
+                    <a href="./doctors/dr-pushpendrakannauji.html">
+                      <div class="aon-med-team2 bg-light-gray">
+                        <div class="aon-med-team2-pic">
+                          <img src="images/doctors/pushpendra.jpg" alt="#" />
+                        </div>
+                        <div class="aon-med-team2-info">
+                          <div class="aon-df-rating">
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="aon-df-lable">(124)</span>
+                          </div>
+                          <h4 class="aon-title">Dr. Pushpendra Kannaujia</h4>
+                          <p class="aon-med-team2-discription">
+                            M.B.B.S, M.S, M.Ch
+                          </p>
+                          <span class="aon-med-team2-position">Plastic Surgery</span>
+                          <span class="aon-med-team2-location"><i class="feather-map-pin"></i>College Name or
+                            Experience</span>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="dr-muditmishra.html"
-                          ><img src="images/doctors/mudit.jpg" alt="#"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="doctors/dr-muditmishra.html">Dr. Mudit Mishra</a>
-                        </h4>
-                        <p class="aon-med-team-discription">
-                          M.B.B.S, M.S, D.N.B, MRCS.
-                        </p>
-                        <span class="aon-med-team-position"
-                          >E.N.T Surgery
-                        </span>
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>College Name or
-                          Experience</span
-                        >
-                        <div class="aon-df-rating">
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="fa fa-star"></span>
-                          <span class="aon-df-lable">(124)</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 4 card / 2 row-->
-                <div class="row">
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="./doctors/dr-karansingh.html"
-                          ><img
-                            src="images/team-2/pic1.jpg"
-                            alt="Dr. Karan Singh"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-karansingh.html"
-                            >Dr. Karan Singh</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., M.S.</p>
-                        <span class="aon-med-team-position"
-                          >General Surgery Specialist</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- You can add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="./doctors/dr-mohdaslam.html"
-                          ><img
-                            src="images/doctors/mohdaslam.jpg"
-                            alt="Dr. Mohd Aslam"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-mohdaslam.html"
-                            >Dr. Mohd Aslam</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., D.N.B.</p>
-                        <span class="aon-med-team-position"
-                          >Orthopedics Specialist</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile2.html"
-                          ><img
-                            src="images/doctors/ashish.jpg"
-                            alt="Dr. Ashish Suman"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-ashishsuman.html"
-                            >Dr. Ashish Suman</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
-                        <span class="aon-med-team-position"
-                          >Internal Medicine Specialist</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile3.html"
-                          ><img
-                            src="images/doctors/ankita.jpg"
-                            alt="Dr. Ankita Verma"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-ankitaverma.html"
-                            >Dr. Ankita Verma</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
-                        <span class="aon-med-team-position"
-                          >Pulmonary Medicine Specialist</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- 4 Card -->
-                <div class="row">
-                  <!-- Dr. Manoj Gupta -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile3.html"
-                          ><img
-                            src="images/team-2/pic3.jpg"
-                            alt="Dr. Manoj Gupta"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-manojgupta.html"
-                            >Dr. Manoj Gupta</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">N/A</p>
-                        <span class="aon-med-team-position"
-                          >Emergency Medical Officer</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Dr. S.P. Mishra -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile4.html"
-                          ><img
-                            src="images/doctors/satyaprakashmishra.jpg"
-                            alt="Dr. S.P. Mishra"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-spmishra.html"
-                            >Dr. S.P. Mishra</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S</p>
-                        <span class="aon-med-team-position">Sonologist</span>
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Dr. Indu Yadav -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile5.html"
-                          ><img
-                            src="images/doctors/indu.jpg"
-                            alt="Dr. Indu Yadav"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-induyadav.html"
-                            >Dr. Indu Yadav</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
-                        <span class="aon-med-team-position"
-                          >Gynaecology And Obstetrics</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Dr. Arsalan Ullah Khan -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile6.html"
-                          ><img
-                            src="images/team-2/pic3.jpg"
-                            alt="Dr. Arsalan Ullah Khan"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-arsalanullahkhan.html"
-                            >Dr. Arsalan Ullah Khan</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">N/A</p>
-                        <span class="aon-med-team-position"
-                          >Emergency Medical Officer</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--  Dr Arjit Singh Card Start -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile6.html"
-                          ><img
-                            src="images/team-2/pic3.jpg"
-                            alt="Dr. Arjit Singh"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-arjitsingh.html"
-                            >Dr. Arjit Singh</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">MBBS | M.S | M.CH</p>
-                        <span class="aon-med-team-position"
-                          >Neuro Surgery</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ Medical
-                          College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Dr Rishabh Nayak Card -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile6.html"
-                          ><img
-                            src="images/team-2/pic3.jpg"
-                            alt="Dr. Rishabh Nayak"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-rishabhnayak.html"
-                            >Dr. Rishabh Nayak</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S | M.D</p>
-                        <span class="aon-med-team-position"
-                          >Medicine</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>RML Delhi</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Dr Amit Saxena Card -->
-                  <div class="col-lg-6 col-md-6">
-                    <div class="aon-med-team">
-                      <div class="aon-med-team-pic">
-                        <a href="profile6.html"
-                          ><img
-                            src="images/team-2/pic3.jpg"
-                            alt="Dr. Amit Saxena"
-                        /></a>
-                      </div>
-                      <div class="aon-med-team-info">
-                        <h4 class="aon-title">
-                          <a href="./doctors/dr-amitsaxena.html"
-                            >Dr. Amit Saxena</a
-                          >
-                        </h4>
-                        <p class="aon-med-team-discription">M.B.B.S | M.D</p>
-                        <span class="aon-med-team-position"
-                          >General Surgery</span
-                        >
-                        <span class="aon-med-team-location"
-                          ><i class="feather-bar-chart"></i>XYZ College</span
-                        >
-                        <div class="aon-df-rating">
-                          <!-- Add rating stars here -->
-                          <span class="aon-df-lable"
-                            ><span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> (124)</span
-                          >
-                        </div>
-                      </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-          
-        </div>
-
-        <!-- Team Section End -->
-      </div>
-      <!-- Left & right section END -->
-
-      <!-- Content END-->
-
-      <!-- FOOTER START -->
-      <footer class="site-footer footer-light">
-        <!-- FOOTER NEWSLETTER START -->
-        <div class="footer-top-newsletter">
-          <div class="container">
-            <div class="sf-news-letter">
-              <span>Subscribe Our Newsletter</span>
-              <form>
-                <div class="sf-news-l-form">
-                  <form action="">
-                    <input
-                      type="number"
-                      maxlength="10"
-                      class="form-control"
-                      placeholder="Enter Your Phone"
-                    />
-                    <button type="submit" class="sf-sb-btn">Submit</button>
-                  </form>
-                </div>
-              </form>
-            </div>
           </div>
-        </div>
+        </section>
+        <!-- Team Section END -->
 
-        <!-- FOOTER BLOCKES START -->
-        <div class="footer-top">
-          <div class="container">
+        <!--Title Section Start-->
+
+        <div class="section-head center">
+          <span class="aon-sub-title">Team</span>
+          <h2 class="aon-title">Meet Our Specialists</h2>
+          <p>
+            They are committed to delivering personalized care and ensuring
+            the best possible outcomes for our patients.
+          </p>
+        </div>
+        <!--Title Section End-->
+
+        <div class="section-content">
+          <div class="aon-med-team-section">
+            <!-- 4 card / row 1 -->
             <div class="row">
-              <!-- COLUMNS 1 -->
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="sf-site-link sf-widget-link">
-                  <h4 class="aon-f-title">ABOUT US</h4>
-                  <p>
-                    Our Vision: Bringing World-Class Treatment to You. We aim to
-                    deliver trustworthy healthcare services globally,
-                    efficiently and affordably.
-                  </p>
-                  <ul class="aon-socila-icon d-flex">
-                    <li>
-                      <a href="javascript:void(0);"
-                        ><i class="fa fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);"
-                        ><i class="fa fa-facebook"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);"
-                        ><i class="fa fa-linkedin"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0);"
-                        ><i class="fa fa-instagram"></i
-                      ></a>
-                    </li>
-                  </ul>
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="./doctors/dr-saurabhmishra.html"><img src="images/doctors/saurabh.jpg" alt="#" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-saurabhmishra.html">DR SAURABH MISHRA</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
+                    <span class="aon-med-team-position">Consultant Anaesthesiology and Intensive care</span>
+                    <!-- Collge or Location -->
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>Satyanand Hospital
+                      Shahjahanpur</span>
+                    <div class="aon-df-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="aon-df-lable">(124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="./doctors/dr-saurabhmishra.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="/doctors/dr-gauravmishra.html"><img src="images/doctors/gaurav.jpg" alt="#" /></a>
+                  </div>.
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-gauravmishra.html">DR GAURAV MISHRA</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S. | M.D.</p>
+                    <span class="aon-med-team-position">Consultant Pediatrician and Neonatologist</span>
+                    <!-- Collge or Location -->
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>Formerly K.G.M.U. |
+                      Lucknow</span>
+                    <div class="aon-df-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="aon-df-lable">(124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="/doctors/dr-gauravmishra.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+              
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="doctors/dr-shwetamishra.html"><img src="images/doctors/shweta.jpg" alt="#" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="doctors/dr-shwetamishra.html">DR SHWETA MISHRA</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S, M.D</p>
+                    <span class="aon-med-team-position">Biochemistry</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>Formerly G.M.C,
+                      Patiala</span>
+                    <div class="aon-df-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="aon-df-lable">(124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-shwetamishra.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
                 </div>
               </div>
-              <!-- COLUMNS 2 -->
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="sf-site-link sf-widget-cities">
-                  <h4 class="aon-f-title">Contact</h4>
-                  <ul>
-                    <li><a href="tel:8931002707">+91 89310-02707</a></li>
-                    <li><a href="tel:+9105842297597">+91 05842-297597</a></li>
-                    <li><a href="medicince.html">satyanand@gmail.com</a></li>
-                    <li><a href="satyanand.in">satyanand.in</a></li>
-                  </ul>
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="dr-muditmishra.html"><img src="images/doctors/mudit.jpg" alt="#" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="doctors/dr-muditmishra.html">Dr. Mudit Mishra</a>
+                    </h4>
+                    <p class="aon-med-team-discription">
+                      M.B.B.S, M.S, D.N.B, MRCS.
+                    </p>
+                    <span class="aon-med-team-position">E.N.T Surgery
+                    </span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>College Name or
+                      Experience</span>
+                    <div class="aon-df-rating">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="aon-df-lable">(124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-muditmishra.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
                 </div>
               </div>
-              <!-- COLUMNS 3 -->
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="sf-site-link sf-widget-categories">
-                  <h4 class="aon-f-title">Quick Links</h4>
-                  <ul>
-                    <li><a href="about-us-2.html">About</a></li>
-                    <li><a href="team-member.html">Doctors</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                    <li><a href="lab-test.html">Book Appointment</a></li>
-                  </ul>
+            </div>
+            <!-- 4 card / 2 row-->
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="./doctors/dr-karansingh.html"><img src="images/team-2/pic1.jpg"
+                        alt="Dr. Karan Singh" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-karansingh.html">Dr. Karan Singh</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S., M.S.</p>
+                    <span class="aon-med-team-position">General Surgery Specialist</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- You can add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-karansingh.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
                 </div>
               </div>
-              <!-- COLUMNS 4 -->
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="sf-site-link sf-widget-contact">
-                  <h4 class="aon-f-title">Location</h4>
-                  <ul>
-                    <a
-                      target="_blank"
-                      href="https://maps.app.goo.gl/w75UFbpaWUZHqpDw9"
-                      ><li>Azizganj, Shahjahanpur</li>
-                      <li>Uttar Pradesh, India</li></a
-                    >
-                  </ul>
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="./doctors/dr-mohdaslam.html"><img src="images/doctors/mohdaslam.jpg"
+                        alt="Dr. Mohd Aslam" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-mohdaslam.html">Dr. Mohd Aslam</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S., D.N.B.</p>
+                    <span class="aon-med-team-position">Orthopedics Specialist</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-mohdaslam.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile2.html"><img src="images/doctors/ashish.jpg" alt="Dr. Ashish Suman" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-ashishsuman.html">Dr. Ashish Suman</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
+                    <span class="aon-med-team-position">Internal Medicine Specialist</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-ashishsuman.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile3.html"><img src="images/doctors/ankita.jpg" alt="Dr. Ankita Verma" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-ankitaverma.html">Dr. Ankita Verma</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
+                    <span class="aon-med-team-position">Pulmonary Medicine Specialist</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-ankitaverma.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 Card -->
+            <div class="row">
+              <!-- Dr. Manoj Gupta -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile3.html"><img src="images/team-2/pic3.jpg" alt="Dr. Manoj Gupta" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-manojgupta.html">Dr. Manoj Gupta</a>
+                    </h4>
+                    <p class="aon-med-team-discription">N/A</p>
+                    <span class="aon-med-team-position">Emergency Medical Officer</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-manojgupta.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dr. S.P. Mishra -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile4.html"><img src="images/doctors/satyaprakashmishra.jpg"
+                        alt="Dr. S.P. Mishra" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-spmishra.html">Dr. S.P. Mishra</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S</p>
+                    <span class="aon-med-team-position">Sonologist</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-spmishra.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dr. Indu Yadav -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile5.html"><img src="images/doctors/indu.jpg" alt="Dr. Indu Yadav" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-induyadav.html">Dr. Indu Yadav</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S., M.D.</p>
+                    <span class="aon-med-team-position">Gynaecology And Obstetrics</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>\
+                  <div class="right-arrow">
+                    <a href="doctors/dr-induyadav.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Dr. Arsalan Ullah Khan -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile6.html"><img src="images/team-2/pic3.jpg" alt="Dr. Arsalan Ullah Khan" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-arsalanullahkhan.html">Dr. Arsalan Ullah Khan</a>
+                    </h4>
+                    <p class="aon-med-team-discription">N/A</p>
+                    <span class="aon-med-team-position">Emergency Medical Officer</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-arsalanullahkhan.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!--  Dr Arjit Singh Card Start -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile6.html"><img src="images/team-2/pic3.jpg" alt="Dr. Arjit Singh" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-arjitsingh.html">Dr. Arjit Singh</a>
+                    </h4>
+                    <p class="aon-med-team-discription">MBBS | M.S | M.CH</p>
+                    <span class="aon-med-team-position">Neuro Surgery</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ Medical
+                      College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-arjitsingh.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Dr Rishabh Nayak Card -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile6.html"><img src="images/team-2/pic3.jpg" alt="Dr. Rishabh Nayak" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-rishabhnayak.html">Dr. Rishabh Nayak</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S | M.D</p>
+                    <span class="aon-med-team-position">Medicine</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>RML Delhi</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-rishabhnayak.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Dr Amit Saxena Card -->
+              <div class="col-lg-6 col-md-6">
+                <div class="aon-med-team" style="position: relative;">
+                  <div class="aon-med-team-pic">
+                    <a href="profile6.html"><img src="images/team-2/pic3.jpg" alt="Dr. Amit Saxena" /></a>
+                  </div>
+                  <div class="aon-med-team-info">
+                    <h4 class="aon-title">
+                      <a href="./doctors/dr-amitsaxena.html">Dr. Amit Saxena</a>
+                    </h4>
+                    <p class="aon-med-team-discription">M.B.B.S | M.D</p>
+                    <span class="aon-med-team-position">General Surgery</span>
+                    <span class="aon-med-team-location"><i class="feather-bar-chart"></i>XYZ College</span>
+                    <div class="aon-df-rating">
+                      <!-- Add rating stars here -->
+                      <span class="aon-df-lable"><span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span> (124)</span>
+                    </div>
+                  </div>
+                  <div class="right-arrow">
+                    <a href="doctors/dr-amitsaxena.html"><img class="arrow-icon" src="./img/logos/arrow-upper-right.png" alt=""></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- FOOTER COPYRIGHT -->
-        <div class="footer-bottom">
-          <div class="container">
-            <div class="aon-footer-bottom-area">
-               <div class="aon-foo-copyright" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px;">
-                  <div id="google_translate_element"></div>
-                <span>Copyright @ 2024 <span style="color: #22D39F;">Satyanand</span> Hospital</span>
-              </div>
-            
-            </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- FOOTER END -->
+      </div>
 
-      <!-- BUTTON TOP START -->
-      <button class="scroltop">
-        <span class="fa fa-angle-up relative" id="btn-vibrate"></span>
-      </button>
+      <!-- Team Section End -->
     </div>
+    <!-- Left & right section END -->
 
-    <!-- JAVASCRIPT  FILES ========================================= -->
+    <!-- Content END-->
 
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- FOOTER START -->
+    <footer class="site-footer footer-light">
+      <!-- FOOTER NEWSLETTER START -->
+      <div class="footer-top-newsletter">
+        <div class="container">
+          <div class="sf-news-letter">
+            <span>Subscribe Our Newsletter</span>
+            <form>
+              <div class="sf-news-l-form">
+                <form action="">
+                  <input type="number" maxlength="10" class="form-control" placeholder="Enter Your Phone" />
+                  <button type="submit" class="sf-sb-btn">Submit</button>
+                </form>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
 
-    <!-- Call back function 2 -->
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-        }
-    </script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <!-- JQUERY.MIN JS -->
-    <script src="js/popper.min.js"></script>
-    <!-- POPPER.MIN JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- BOOTSTRAP.MIN JS -->
+      <!-- FOOTER BLOCKES START -->
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <!-- COLUMNS 1 -->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="sf-site-link sf-widget-link">
+                <h4 class="aon-f-title">ABOUT US</h4>
+                <p>
+                  Our Vision: Bringing World-Class Treatment to You. We aim to
+                  deliver trustworthy healthcare services globally,
+                  efficiently and affordably.
+                </p>
+                <ul class="aon-socila-icon d-flex">
+                  <li>
+                    <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- COLUMNS 2 -->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="sf-site-link sf-widget-cities">
+                <h4 class="aon-f-title">Contact</h4>
+                <ul>
+                  <li><a href="tel:8931002707">+91 89310-02707</a></li>
+                  <li><a href="tel:+9105842297597">+91 05842-297597</a></li>
+                  <li><a href="medicince.html">satyanand@gmail.com</a></li>
+                  <li><a href="satyanand.in">satyanand.in</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- COLUMNS 3 -->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="sf-site-link sf-widget-categories">
+                <h4 class="aon-f-title">Quick Links</h4>
+                <ul>
+                  <li><a href="about-us-2.html">About</a></li>
+                  <li><a href="team-member.html">Doctors</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="contact-us.html">Contact Us</a></li>
+                  <li><a href="lab-test.html">Book Appointment</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- COLUMNS 4 -->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="sf-site-link sf-widget-contact">
+                <h4 class="aon-f-title">Location</h4>
+                <ul>
+                  <a target="_blank" href="https://maps.app.goo.gl/w75UFbpaWUZHqpDw9">
+                    <li>Azizganj, Shahjahanpur</li>
+                    <li>Uttar Pradesh, India</li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="js/jquery.bootstrap-touchspin.js"></script>
-    <!-- FORM JS -->
-    <script src="js/bootstrap-slider.min.js"></script>
-    <!-- BOOTSTRAP Slider -->
-    <script src="js/magnific-popup.min.js"></script>
-    <!-- MAGNIFIC-POPUP JS -->
-    <script src="js/waypoints.min.js"></script>
-    <!-- WAYPOINTS JS -->
-    <script src="js/counterup.min.js"></script>
-    <!-- COUNTERUP JS -->
-    <script src="js/waypoints-sticky.min.js"></script>
-    <!-- STICKY HEADER -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <!-- MASONRY  -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- OWL  SLIDER  -->
-    <script src="js/slick.min.js"></script>
-    <!-- Slick SLIDER  -->
-    <script src="js/theia-sticky-sidebar.js"></script>
-    <!-- STICKY SIDEBAR  -->
-    <script src="js/jquery.scrollbar.min.js"></script>
-    <!-- MY ACCOUNT LEFT PANEL SCROLLER -->
-    <script src="js/dropzone.js"></script>
-    <!--IMAGE UPLOAD-->
-    <script src="js/bootstrap4-toggle.min.js"></script>
-    <!-- BOOTSTRAP TOOGLE-->
-    <script src="js/jquery.dataTables.min.js"></script>
-    <!--DATA TABLE-->
-    <script src="js/dataTables.bootstrap4.min.js"></script>
-    <!-- DATA TABLE-->
-    <script src="js/lc_lightbox.lite.js"></script>
-    <!-- IMAGE POPUP -->
-    <script src="js/datepicker.min.js"></script>
-    <!-- DATEPICKER -->
-    <script src="js/fullcalendar.min.js"></script>
-    <!-- DATEPICKER -->
+      <!-- FOOTER COPYRIGHT -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="aon-footer-bottom-area">
+            <div class="aon-foo-copyright" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px;">
+              <div id="google_translate_element"></div>
+              <span>Copyright @ 2024 <span style="color: #22D39F;">Satyanand</span> Hospital</span>
+            </div>
 
-    <script src="js/custom.js"></script>
-    <!-- CUSTOM FUCTIONS  -->
-  </body>
+          </div>
+        </div>
+      </div>
+  </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <!-- BUTTON TOP START -->
+  <button class="scroltop">
+    <span class="fa fa-angle-up relative" id="btn-vibrate"></span>
+  </button>
+  </div>
+
+  <!-- JAVASCRIPT  FILES ========================================= -->
+
+  <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Call back function 2 -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+    }
+  </script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <!-- JQUERY.MIN JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- POPPER.MIN JS -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- BOOTSTRAP.MIN JS -->
+
+  <script src="js/jquery.bootstrap-touchspin.js"></script>
+  <!-- FORM JS -->
+  <script src="js/bootstrap-slider.min.js"></script>
+  <!-- BOOTSTRAP Slider -->
+  <script src="js/magnific-popup.min.js"></script>
+  <!-- MAGNIFIC-POPUP JS -->
+  <script src="js/waypoints.min.js"></script>
+  <!-- WAYPOINTS JS -->
+  <script src="js/counterup.min.js"></script>
+  <!-- COUNTERUP JS -->
+  <script src="js/waypoints-sticky.min.js"></script>
+  <!-- STICKY HEADER -->
+  <script src="js/isotope.pkgd.min.js"></script>
+  <!-- MASONRY  -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- OWL  SLIDER  -->
+  <script src="js/slick.min.js"></script>
+  <!-- Slick SLIDER  -->
+  <script src="js/theia-sticky-sidebar.js"></script>
+  <!-- STICKY SIDEBAR  -->
+  <script src="js/jquery.scrollbar.min.js"></script>
+  <!-- MY ACCOUNT LEFT PANEL SCROLLER -->
+  <script src="js/dropzone.js"></script>
+  <!--IMAGE UPLOAD-->
+  <script src="js/bootstrap4-toggle.min.js"></script>
+  <!-- BOOTSTRAP TOOGLE-->
+  <script src="js/jquery.dataTables.min.js"></script>
+  <!--DATA TABLE-->
+  <script src="js/dataTables.bootstrap4.min.js"></script>
+  <!-- DATA TABLE-->
+  <script src="js/lc_lightbox.lite.js"></script>
+  <!-- IMAGE POPUP -->
+  <script src="js/datepicker.min.js"></script>
+  <!-- DATEPICKER -->
+  <script src="js/fullcalendar.min.js"></script>
+  <!-- DATEPICKER -->
+
+  <script src="js/custom.js"></script>
+  <!-- CUSTOM FUCTIONS  -->
+</body>
+
 </html>
