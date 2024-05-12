@@ -1160,7 +1160,7 @@ function changeSlide() {
 
   index = (index + 1) % slides.length; // Loop back to the first slide after the last one
 
-  setTimeout(changeSlide, 4000); // Change slide every 2 seconds
+  setTimeout(changeSlide, 3000); // Change slide every 2 seconds
 }
 
 changeSlide();
