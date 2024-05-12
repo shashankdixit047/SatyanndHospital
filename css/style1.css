@@ -1,0 +1,37 @@
+.sf-patient-exp-list li {
+    display: none;
+    }
+    .sf-patient-exp-list li.active {
+    display: block;
+    animation: slideIn 1s ease-in-out;
+    }
+    @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .aon-article-list-inner {
+        display: none;
+      }
+    
+      .aon-article-list-inner:first-child {
+        display: block;
+        animation: slideIn 1s ease-in-out;
+      }
+      @keyframes slideIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }

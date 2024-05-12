@@ -9,35 +9,7 @@ All JavaScript fuctions Start
 
   /*Submot contact form*/
 
-  jQuery(document).on("submit", "form.contact-form", function (e) {
-    e.preventDefault();
-    var form = jQuery(this);
-    /* sending message */
-    jQuery.ajax({
-      url: "https://aonetheme.com/mfine/contact-form.php",
-      data: form.serialize() + "&action=contactform",
-      type: "POST",
-      dataType: "JSON",
-      beforeSend: function () {
-        jQuery(".alert").remove();
-        jQuery(".loading-area").show();
-      },
 
-      success: function (data) {
-        jQuery(".loading-area").hide();
-        if (data["success"]) {
-          jQuery(
-            "<div class='alert alert-success'>" + data["message"] + "</div>"
-          ).insertBefore("form.contact-form");
-          jQuery(".alert-success").delay(20000).fadeOut(500);
-        } else {
-          jQuery(
-            "<div class='alert alert-danger'>" + data["message"] + "</div>"
-          ).insertBefore("form.contact-form");
-        }
-      },
-    });
-  });
 
   // popovers initialization - on hover
   // Image Popover = jquery.prettyPhoto.js ================= //
@@ -1163,25 +1135,11 @@ All JavaScript fuctions Start
 
 // Call for Request Start
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector("form");
+// Get the form element
+// Get the form element
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
 
-    const phoneNumberInput = document.querySelector("input[type='number']");
-    const phoneNumber = phoneNumberInput.value.trim();
-
-    if (phoneNumber.length !== 10) {
-      alert("Input number is invalid. Please enter a 10-digit number.");
-      return;
-    }
-
-    // If the input number is valid, you can submit the form here
-    // For demonstration purpose, I'm just logging the phone number
-    console.log("Phone Number:", phoneNumber);
-  });
-});
+// Add event listener for form submission
 
 // Call for Request End
 
@@ -1212,3 +1170,4 @@ changeSlide();
 // Gallety Page Start start
 
 // Gallety Page Start end
+

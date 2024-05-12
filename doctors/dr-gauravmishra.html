@@ -772,17 +772,18 @@
                                 <h3 class="mb-4">Your Experience</h3>
 
                                 <div class="sf-doc-find">
-                                    <form>
+                                    <form method="post" action="https://script.google.com/macros/s/AKfycbwS53b6rzu9EnS6gh8IYRsLG9FLk-LxP9YPAtUt5_jYPKHlTOM7b2eo4NsMIB43bYoQjw/exec" id="experience-form">
                                         <div class="form-group">
-
-                                            <input class="form-control" name="name" type="text" placeholder="Full Name">
-
+                                            <input class="form-control" maxlength="25" name="name" type="text" placeholder="Full Name">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="Feedback"
+                                            <input type="text" maxlength="200" class="form-control" name="Feedback"
                                                 placeholder="Write Feedback" id="">
                                         </div>
-                                        <button class="site-button" type="submit"> Submit</button>
+                                        <!-- For submit notification -->
+                                        <div id="alertMessage" style="display: none;"></div>
+                                        
+                                        <button class="site-button" type="submit">Submit <i class="fa fa-paper-plane"></i></button>
                                     </form>
                                 </div>
 
@@ -939,7 +940,8 @@
                 <div class="container">
                     <div class="aon-foo-copyright"
                         style="display: flex; flex-wrap: wrap; justify-content: center; gap: 50px;">
-                        <div id="google_translate_element"></div>
+                        <div id="google_translate_element" ></div>
+
                         <span style="color: black;">Copyright @ 2024 <span style="color: #22D39F;">Satyanand</span>
                             Hospital</span>
                     </div>
@@ -1010,10 +1012,13 @@
     <script type="text/javascript"
         src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+      
+    
+
     <!-- Call back function 2 -->
     <script type="text/javascript">
         function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            new google.translate.TranslateElement({pageLanguage: 'en' , includedLanguages : 'hi,en'}, 'google_translate_element');
         }
     </script>
     <script src="../js/jquery-3.6.0.min.js"></script><!-- JQUERY.MIN JS -->
@@ -1031,14 +1036,13 @@
     <script src="../js/slick.min.js"></script><!-- Slick SLIDER  -->
     <script src="../js/theia-sticky-sidebar.js"></script><!-- STICKY SIDEBAR  -->
     <script src="../js/jquery.scrollbar.min.js"></script><!-- MY ACCOUNT LEFT PANEL SCROLLER -->
-    <script src="../js/dropzone.js"></script><!--IMAGE UPLOAD-->
+    <script src="../js/dropzone.js"></script>IMAGE UPLOAD
     <script src="../js/bootstrap4-toggle.min.js"></script><!-- BOOTSTRAP TOOGLE-->
     <script src="../js/jquery.dataTables.min.js"></script><!--DATA TABLE-->
     <script src="../js/dataTables.bootstrap4.min.js"></script><!-- DATA TABLE-->
     <script src="../js/lc_lightbox.lite.js"></script><!-- IMAGE POPUP -->
     <script src="../js/datepicker.min.js"></script><!-- DATEPICKER -->
-    <script src="../js/fullcalendar.min.js"></script><!-- DATEPICKER -->
-    <script src="../js/recaptcha-api.js"></script><!-- RECAPTCHA-->
+    <script src="../js/forms.js"></script>
     <script src="../js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 
 
