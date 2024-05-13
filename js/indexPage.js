@@ -10,7 +10,7 @@ listItems[currentIndex].classList.add('active');
 // Show the first item initially
 listItems[currentIndex].classList.add('active');
 // Set interval to show next item every 3 seconds
-setInterval(showNextItem, 3000);
+setInterval(showNextItem, 5000);
 
 
 
