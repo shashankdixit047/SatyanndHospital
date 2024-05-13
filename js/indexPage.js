@@ -27,7 +27,7 @@ articles[currentIndexForArticle].style.display = 'block';
 
 function startCarousel() {
 showNextArticle();
-setInterval(showNextArticle, 3000); // Change article every 3 seconds
+setInterval(showNextArticle, 5000); // Change article every 3 seconds
 }
 
 startCarousel();
