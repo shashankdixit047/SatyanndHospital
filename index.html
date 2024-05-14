@@ -1526,11 +1526,27 @@
     src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- Call back function 2 -->
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'hi,en' }, 'google_translate_element');
-    }
-  </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en' , includedLanguages : 'hi,en'}, 'google_translate_element');
+        }
+    </script>
+<script>
+  BOT9_DATA = {
+    bot9Id: "b77859b0-9e25-41a8-acaa-0bb016afd3a9",
+    // user: {
+    //   userId: '<unique_user_id>',
+    //   emailId: '<user_email>',
+    //   name: '<user_name>',
+    //   customAttributes: {
+    //     Field1: '',
+    //     Field2: '',
+    //     Field3: '',
+    //   }
+    // }
+  };
+  document.head.appendChild(document.createElement('script')).src = 'https://sdk.chatwidget.in/bot.js';
+</script>
 
   <!-- Add this script tag in your HTML file -->
 
