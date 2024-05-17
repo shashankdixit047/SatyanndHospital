@@ -205,3 +205,23 @@ display: inline-block;
   transition: all 250ms ease-out 0s;
   width: 20px;
 }
+
+/* CSS for slide up animation */
+.aon-article-list-inner {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  1% {
+      transform: translateY(10%);
+      opacity: 0;
+  }
+  50% {
+      transform: translateY(5%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
