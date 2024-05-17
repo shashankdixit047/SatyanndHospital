@@ -25,5 +25,5 @@ Follow us on [Facebook](https://www.facebook.com/people/Satyanand-Hospital-Pvt-L
 
 ## Upcoming Events
 - FAQ Page : section of different type of questions. like Doctor, Primary care, Lab test, Privacy and security, about Us
-- blog Page: for blog post defferent of type.
-  
+- blog Page: for blog post different of type.
+- Serives Page: example in detailed about Services or department  
