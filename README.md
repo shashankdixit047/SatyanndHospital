@@ -1,6 +1,6 @@
 # Satyanand Hospital
 
-Satyanand Hospital is a top multi-specialist hospital in Shahjanpur, serving both villagers and city residents for over 20 years. They offer free treatment with Ayushman card. Book your appointment now for trusted healthcare services.
+Satyanand Hospital is a top multi-specialist hospital in Shahjahanpur, serving both villagers and city residents for over 20 years. They offer free treatment with Ayushman card. Book your appointment now for trusted healthcare services.
 
 ## Services Offered
 - Orthopedic services
