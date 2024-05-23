@@ -757,18 +757,23 @@
                                 <h3 class="mb-4">Your Experience</h3>
 
                                 <div class="sf-doc-find">
-                                    <form>
-                                        <div class="form-group">
+                                    <form method="post"
+                                    action="https://script.google.com/macros/s/AKfycbzZdQTt7XXgm5YbKubKvUVxtziTf0STLL8L4f8Z8Z2xlNJ6g1GhjtrwMEi2hd0xDw/exec"
+                                    class="experience-form">
+                                    <div class="form-group">
+                                        <input class="form-control" required maxlength="25" name="name" type="text"
+                                            placeholder="Full Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" maxlength="200" required class="form-control"
+                                            name="Feedback" placeholder="Write Feedback" id="">
+                                    </div>
+                                    <!-- For submit notification -->
+                                    <div class="alertMessage" style="display: none;"></div>
 
-                                            <input class="form-control" required maxlength="25" name="name" type="text" placeholder="Full Name">
-
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" required class="form-control" name="Feedback"
-                                                placeholder="Write Feedback">
-                                        </div>
-                                        <button class="site-button" type="submit"> Submit</button>
-                                    </form>
+                                    <button class="site-button" type="submit">Submit <i
+                                            class="fa fa-paper-plane"></i></button>
+                                </form> 
                                 </div>
 
                             </div>
@@ -1027,6 +1032,7 @@
     <script src="../js/fullcalendar.min.js"></script><!-- DATEPICKER -->
     <script src="../js/recaptcha-api.js"></script><!-- RECAPTCHA-->
     <script src="../js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+    <script src="../js/forms.js"></script>
 
 
 </body>
