@@ -270,32 +270,32 @@
                         </div>
                         <!--Contact Form-->  
                         <div class="sf-contact-form2 shadow">
-                            <form class="contact-form" method="post">
+                            <form class="contact-form" action="#" method="post" >
                                 <div class="row">
                                     
                                     <!-- COLUMNS 1 -->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="fullname" placeholder="Name" class="form-control" required>
+                                            <input type="text" minlength="4" maxlength="25" name="fullname" placeholder="Name" class="form-control" required>
                                         </div>
                                     </div>
                                     
                                     <!-- COLUMNS 2 -->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="email" placeholder="Email" class="form-control" required>
+                                            <input type="email" name="email" placeholder="Email" class="form-control" required>
                                         </div>
                                     </div>
                                     <!-- COLUMNS 3 -->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="number" name="phone" placeholder="Phone" class="form-control">
+                                            <input type="number" minlength="10" maxlength="10" name="phone" placeholder="Phone" class="form-control">
                                         </div>
                                     </div>
                                     <!-- COLUMNS 4 -->
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" name="subject" placeholder="Subject" class="form-control" required>
+                                            <input type="text" name="subject" minlength="10" maxlength="100" placeholder="Subject" class="form-control" required>
                                         </div>
                                     </div>
     
@@ -305,11 +305,12 @@
                                             <textarea name="message" placeholder="Message" class="form-control" rows="4" required></textarea>
                                         </div>
                                     </div>
-                                    
+                                    <!-- COLUMNS 6 -->
                                     <div class="col-md-12">
-                                        <div class="g-recaptcha" data-sitekey="6LfcCr0eAAAAAN2P-3cJJC1StgxbUWvwELbMVjnp"></div>
+                                        <div class="form-group">
+                                          <div class="contactMessage"></div>
+                                        </div>
                                     </div>
-    
                                 </div>
                                 <div class="sf-contact-submit-btn text-center">
                                     <button class="site-button" type="submit">Submit</button>
