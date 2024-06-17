@@ -81,48 +81,128 @@
   <link rel="stylesheet" href="./css/style1.css">
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org/",
-      "@type": "Person",
-      "name": "Dr. Gaurav Mishra",
-      "url": "https://satyanandhospital.co.in/doctors/pediatrician-dr-gauravmishra",
-      "image": "https://satyanandhospital.co.in/images/doctors/gaurav.webp",
-      "sameAs": [
-        "https://www.facebook.com/gaurav.mishra.102",
-        "https://www.instagram.com/gauravmishra1834/"
-      ],
-      "jobTitle": "Pediatrician and Neonatologist Doctor",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Satyanand Hospital Pvt Ltd"
-      }  
-    }
-    </script>
-      <!-- Organization Schema markup Card -->
-  <script type="application/ld+json">
-    {
       "@context": "https://schema.org",
-      "@type": "VeterinaryCare",
-      "name": "Satyanand Hospital",
-      "alternateName": "Satyanand Hospital Shahjahanpur",
+      "@type": "Hospital",
+      "name": "Satyanand Hospital Shahjahanpur",
+      "image": "https://satyanandhospital.co.in/img/logos/logo.png",
+      "@id": "https://satyanandhospital.co.in/",
       "url": "https://satyanandhospital.co.in/",
-      "logo": "https://satyanandhospital.co.in/img/logos/logo.png",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "8931002707",
-        "contactType": "customer service",
-        "contactOption": "TollFree",
-        "areaServed": "IN",
-        "availableLanguage": ["en","Hindi"]
+      "telephone": "+91 89310-02707",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Azizganj",
+        "addressLocality": "Shahjahanpur",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "242001",
+        "addressCountry": "IN"
       },
-      "sameAs": [
-        "https://www.facebook.com/people/Satyanand-Hospital-Pvt-Ltd/100065378743239/",
-        "https://www.instagram.com/satyanandhospitalpvt.ltd/",
-        "https://x.com/i/flow/login?redirect_after_login=%2FLtdSatyanand",
-        "https://www.youtube.com/@satyanandhospital"
-      ]
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.883125,
+        "longitude": 79.912101
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "department": [
+        {
+          "@type": "MedicalOrganization",
+          "name": "Anaesthesiology",
+          "medicalSpecialty": "Anesthesia"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Pediatrics",
+          "medicalSpecialty": "Pediatric"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Biochemistry",
+          "medicalSpecialty": "BiochemicalScience"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Gynaecology And Obstetrics",
+          "medicalSpecialty": "Gynecology"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Neuro Surgery",
+          "medicalSpecialty": "Neurology"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Medicine",
+          "medicalSpecialty": "InternalMedicine"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "General Surgery",
+          "medicalSpecialty": "Surgery"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Orthopedics",
+          "medicalSpecialty": "Orthopedic"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "URO Surgery",
+          "medicalSpecialty": "Urology"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Internal Medicine",
+          "medicalSpecialty": "InternalMedicine"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Emergency Medical",
+          "medicalSpecialty": "Emergency"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Sonology",
+          "medicalSpecialty": "Radiology"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "E.N.T Surgery",
+          "medicalSpecialty": "Otolaryngology"
+        },
+        {
+          "@type": "MedicalOrganization",
+          "name": "Pulmonary Medicine",
+          "medicalSpecialty": "Pulmonology"
+        }
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://satyanandhospital.co.in/appointment",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/AndroidPlatform",
+            "http://schema.org/iOSPlatform"
+          ]
+        }
+      }
     }
     </script>
-
+      
   
 </head>
 
